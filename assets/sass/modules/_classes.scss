@@ -1,0 +1,39 @@
+// All Custom CSS Classes
+
+// Font classes
+
+.italic-style {
+  font-style: italic;
+}
+
+.bold-font {
+  font-weight: 600;
+}
+
+.light-font {
+  font-weight: 300;
+}
+
+.underline-it {
+  text-decoration: underline;
+}
+
+.underline-it-alt {
+  border-bottom: 1px solid;
+}
+
+.strike-it {
+  text-decoration: line-through;
+}
+
+// Hiders on layout
+@include mq($until: tablet) {
+  .hide-el-on-mobile {
+    display: none;
+  }
+}
+
+// Hide on Desktop
+.hide-el-on-all {
+  display: none !important;
+}

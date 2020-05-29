@@ -1,0 +1,23 @@
+{
+  "name": "my-vue-web",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "dependencies": {
+    "nuxt": "^2.12.2"
+  },
+  "devDependencies": {
+    "brand-colors": "latest",
+    "family.scss": "latest",
+    "kf-sass": "^1.0.1",
+    "node-sass": "^4.14.1",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "rfs": "latest",
+    "sass-loader": "^8.0.2",
+    "sass-mq": "latest"
+  },
+  "optionalDependencies": {
+    "fsevents": "latest"
+  }
+}

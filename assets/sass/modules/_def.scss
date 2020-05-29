@@ -1,0 +1,20 @@
+html,
+body {
+  position: relative;
+}
+
+html {
+  font-size: $browser-font-size;
+  height: 100%;
+}
+
+body {
+  background-color: $color-tpl-bg;
+  background-image: $color-tpl-bg;
+  color: $color-black;
+  font-family: $font-name;
+  font-size: $default-font-size;
+  height: auto;
+  line-height: $line-height;
+  text-rendering: optimizelegibility;
+}

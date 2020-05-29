@@ -1,0 +1,50 @@
+//1. Assets
+
+$path-to-assets: '/assets/';
+$css-path: $path-to-assets + 'css/';
+$img-path: $path-to-assets + 'img/';
+$font-path: $path-to-assets + 'fonts/';
+
+//2. Fonts
+
+$font-name: 'Jost', system-ui, sans-serif;
+
+//Font Directory
+//$font-path-local: $font-path + $font-name;
+
+//Font Sizes
+$font-size-sm: 1.4rem;
+$font-size-nm: 1.6rem;
+$font-size-md: 2.1rem;
+$font-size-lg: 2.4rem;
+$font-size-xt: 3.2rem;
+$font-size-xl: 3.6rem;
+$font-size-xxl: 4.8rem;
+
+// Browser default
+$browser-font-size: 62.5%;
+
+// Default font-size
+$default-font-size: 1.6rem;
+
+//Line Height
+$line-height: 1.618em;
+
+//Z-index
+$z-index-tp: 9999;
+$z-index-md: 5000;
+$z-index-bt: 1000;
+
+//Breakpoints
+$mq-breakpoints: (
+  'phone': 480px,
+  'tablet': 768px,
+  'desktop': 1300px,
+  'wide': 1600px
+);
+
+$bp-desktop: 1600px;
+$bp-tablet: 768px;
+$bp-mobile: 480px;
+
+@import 'colors';
