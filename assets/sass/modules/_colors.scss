@@ -3,9 +3,15 @@
 $color-black: #222;
 $color-white: #fff;
 
+// -- Custom pallette
+$ebony: #030507;
+$black-bean: #020506;
+$marshland: #030403;
+$rangoon-green: #040403;
+
 // -- Template Colors
 $color-tpl-bg: gray(2);
-$color-tpl-bg-image: linear-gradient(to right top, #030507, #020506, #020504, #030403, #040403);
-$color-custom-dev: #f8db94;
-$color-custom-code: #dda0dd;
-$color-custom-des: #789971;
+$color-tpl-bg-image: linear-gradient(to right top, $ebony, $black-bean, $marshland, $rangoon-green);
+$color-custom-dev: marzipan;
+$color-custom-code: light-orchid;
+$color-custom-des: laurel;
