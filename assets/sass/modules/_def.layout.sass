@@ -1,0 +1,73 @@
+//sass-lint:disable selector-depth, nesting-depth
+
+nav
+  display: flex
+  flex-direction: column
+  margin: 3vh
+
+  .menu
+    display: flex
+    flex-wrap: wrap
+    margin: 0
+    padding: 0
+    position: relative
+
+    .menu-link
+      color: gray(90)
+      font-size: $font-size-md
+      margin: 0 20px 0 0
+      padding-left: 0
+      padding-right: 0
+      position: relative
+      transition: color .4s
+
+      &:focus,
+      &:hover
+        color: gray(40)
+
+        &::before
+          transform: scale3d(1, 1, 1)
+          transition-delay: 0s
+
+      &::before,
+      &::after
+        bottom: -10px
+        content: ''
+        height: 4px
+        left: 0
+        position: absolute
+        transform: scale3d(0, 1, 1)
+        transform-origin: center left
+        transition: transform .4s cubic-bezier(.22, .61, .36, 1)
+        width: 100%
+
+      &::before
+        background: gray(70)
+        transition-delay: .4s
+
+      &::after
+        background: $color-white
+
+    .menu-item-current
+      .menu-link
+        color: $color-white
+
+        &:hover,
+        &:focus
+          color: $color-white
+
+        &::after
+          transform: scale3d(1, 1, 1)
+
+        &::before
+          transform: scale3d(1, 1, 1)
+          transition-delay: 0s
+
+  @include mq($until: tablet)
+    .menu
+      .menu-link
+        font-size: $font-size-nm + .2
+
+        &::before,
+        &::after
+          height: 2px

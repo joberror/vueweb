@@ -15,7 +15,9 @@
     "pug-plain-loader": "^1.0.0",
     "rfs": "latest",
     "sass-loader": "^8.0.2",
-    "sass-mq": "latest"
+    "sass-mq": "latest",
+    "vue-svg-loader": "^0.16.0",
+    "vue-template-compiler": "^2.6.11"
   },
   "optionalDependencies": {
     "fsevents": "latest"

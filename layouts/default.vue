@@ -1,3 +1,14 @@
 <template lang='pug'>
-    nuxt
+    Navigation
 </template>
+
+<script>
+
+import Navigation from '@/components/nav.vue';
+
+export default {
+    components: {
+        Navigation
+    }
+}
+</script>
