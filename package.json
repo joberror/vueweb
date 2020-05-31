@@ -7,6 +7,7 @@
     "nuxt": "^2.12.2"
   },
   "devDependencies": {
+    "@nuxtjs/svg": "^0.1.11",
     "brand-colors": "latest",
     "family.scss": "latest",
     "kf-sass": "^1.0.1",

@@ -7,6 +7,9 @@ export default {
     plugins: [{
         src: '~plugins/main'
     }],
+    modules: [
+        '@nuxtjs/svg'
+    ],
     css: [
         '~assets/sass/main.sass'
     ],
