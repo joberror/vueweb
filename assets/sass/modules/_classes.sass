@@ -1,0 +1,50 @@
+//sass-lint:disable selector-depth, nesting-depth, no-color-literals
+
+.cl
+  &-fw
+    &-bold
+      font-weight: 600
+
+    &-light
+      font-weight: 300
+
+  &-fs-italic
+    font-style: italic
+
+  &-td
+    &-underline
+      text-decoration: underline
+
+    &-strike
+      text-decoration: line-through
+
+    &-wavy
+      text-decoration: wavy
+
+    &-dotted
+      text-decoration: dotted
+
+    &-dashed
+      text-decoration: dashed
+
+  &-bdr-underline
+    border-bottom: 1px solid
+    margin-bottom: 1px
+
+  &-colr
+    &-white
+      color: #fff
+
+    &-dark
+      color: gray(20)
+
+// Hiders on layout
+  +mq($until: tablet)
+    &-hide-el-on-mobile
+      display: none
+
+
+// Hide on Desktop
+  &-hide-el-on-all
+    display: none
+

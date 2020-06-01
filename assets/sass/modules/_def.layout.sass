@@ -2,7 +2,7 @@
 
 nav
   display: flex
-  flex-direction: column
+  flex-direction: row
   margin: 3vh
 
   .menu
@@ -15,7 +15,7 @@ nav
     .menu-link
       color: gray(90)
       font-size: $font-size-md
-      margin: 0 20px 0 0
+      margin: 0 40px 0 0
       padding-left: 0
       padding-right: 0
       position: relative
@@ -48,7 +48,7 @@ nav
       &::after
         background: $color-white
 
-    .menu-item-current
+    .nuxt-link-active
       .menu-link
         color: $color-white
 
@@ -62,6 +62,31 @@ nav
         &::before
           transform: scale3d(1, 1, 1)
           transition-delay: 0s
+
+  .social
+    display: flex
+    flex-direction: row
+    margin-left: 10px
+
+    li
+      margin-right: 30px
+
+      a
+        display: block
+        height: 24px
+
+        svg
+          height: 100%
+
+          &.svg-twitter
+            path
+              fill: $bc-twitter
+
+          &.svg-instagram
+            path,
+            circle
+              fill: $bc-instagram-8
+
 
   @include mq($until: tablet)
     .menu

@@ -1,14 +1,18 @@
 <template lang="pug">
-    
+  h1 welcome to Work page
 </template>
 
 <script>
     export default {
-    	name: 'index',
+    	name: 'work',
         head() {
     		return {
-    			title: '= Home'
+    			title: '= My Works'
             }
         }
     }
 </script>
+
+<style>
+
+</style>

@@ -1,12 +1,12 @@
-<template lang='pug'>
+<template lang="pug">
     nav
         ul.menu
-            li.menu-item(v-for='(menu, i) in menus')
-                a.menu-link(:href='menu.href', :title='menu.title', :data-content='menu.content') {{menu.content}}
+            nuxt-link(v-for='(menu, i) in menus', tag='li' :to='menu.href', :key='menu.content' exact)
+              a.menu-link(:title='menu.title', :data-content='menu.content') {{menu.content}}
         ul.social
             li(v-for='(link, i) in extLink')
-              a
-                component(:is='link.svg')(:class='link.class')
+              a(:href='link.href', :title='link.title')
+                component(:is='link.svg', :class='link.class')
               
 </template>
 
@@ -22,8 +22,18 @@ export default {
   data() {
     return {
       extLink: [
-        { svg: "TwitterSVG", href: "", class: "svg-twitter" },
-        { svg: "InstagramSVG", href: "", class: "svg-instagram" }
+        {
+          svg: "TwitterSVG",
+          href: "https://twitter.com/iamjoberror",
+          class: "svg-twitter",
+          title: "Follow me on Twitter"
+        },
+        {
+          svg: "InstagramSVG",
+          href: "https://instagram.com/i.am.joberror",
+          class: "svg-instagram",
+          title: "Check me out on Instagram"
+        }
       ],
       menus: [
         { href: "/", title: "Go to Home page", content: "Home" },
@@ -31,9 +41,6 @@ export default {
         { href: "/work/", title: "My Works", content: "Work" }
       ]
     };
-  },
-  mounted() {
-    this.$currentMenu("menu-item-current");
   }
 };
 </script>
