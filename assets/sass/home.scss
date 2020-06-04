@@ -1,0 +1,142 @@
+//sass-lint:disable selector-depth, nesting-depth
+@import 'modules/plugins';
+
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  justify-content: center;
+
+  div {
+    margin-bottom: 20px;
+
+    p {
+      color: gray(80);
+      font-size: $font-size-xl * 2;
+      font-weight: 500;
+      line-height: 1.25;
+
+      em:not(:first-of-type),
+      span {
+        opacity: 0;
+        transition: opacity 1s, color 2s linear;
+        visibility: hidden;
+      }
+
+      span {
+        @include first-child {
+          animation: show 2s linear 1s forwards;
+        }
+
+        &:nth-of-type(2) {
+          animation: show 0s linear 3s forwards;
+        }
+
+        &:nth-of-type(3) {
+          animation: show 0s linear 4s forwards;
+        }
+
+        &:nth-of-type(4) {
+          animation: show 0s linear 6s forwards;
+        }
+
+        &:nth-of-type(5) {
+          animation: show 0s linear 8s forwards;
+        }
+
+      }
+
+      em {
+        &:nth-of-type(2) {
+          animation: show 1s linear 2s forwards, color-rush 4s linear 4;
+        }
+
+        &:nth-of-type(3) {
+          animation: show 1s linear 5s forwards;
+        }
+
+        &:nth-of-type(4) {
+          animation: show 1s linear 7s forwards;
+        }
+      }
+
+    }
+
+    ul {
+      animation: show 0s linear 9s forwards;
+      display: flex;
+      justify-content: row;
+      margin-top: 10vh;
+      visibility: hidden;
+
+      li {
+        font-size: $font-size-md;
+        font-weight: 500;
+
+        hr {
+          animation: width 2s linear 9s forwards;
+          border-bottom: 4px solid gray(60);
+          margin-right: 20px;
+          width: 0;
+        }
+
+        a {
+          color: $color-white;
+          margin-left: 14px;
+
+          &:hover {
+            color: gray(60);
+          }
+        }
+
+        @include between(2, 3) {
+          opacity: 0;
+          transition: opacity 1s linear;
+          visibility: hidden;
+        }
+
+        &:nth-of-type(2) {
+          animation: show 1s linear 11s forwards;
+        }
+
+        &:last-of-type {
+          animation: show 1s linear 13s forwards;
+        }
+      }
+    }
+  }
+
+  @include mq($until: tablet) {
+    div {
+      margin: 0 6vh;
+
+      p {
+        font-size: $font-size-xt + 1;
+
+        br {
+          display: none;
+        }
+      }
+
+      ul {
+        flex-direction: column;
+        margin-top: 6vh;
+
+        li {
+          font-size: $font-size-nm;
+          margin-bottom: 6px;
+
+          a {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include keyframes(fade);
+@include keyframes(width, 80px);
+@include keyframes(show);
+@include keyframes(color-rush, green, yellow, black, gray);

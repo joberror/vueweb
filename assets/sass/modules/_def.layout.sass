@@ -13,9 +13,9 @@ nav
     position: relative
 
     .menu-link
-      color: gray(90)
-      font-size: $font-size-md
-      margin: 0 40px 0 0
+      +rfs($font-size-md)
+      +margin-right(3rem)
+      color: gray(80)
       padding-left: 0
       padding-right: 0
       position: relative
@@ -31,9 +31,9 @@ nav
 
       &::before,
       &::after
-        bottom: -10px
+        bottom: -6px
         content: ''
-        height: 2px
+        height: 3px
         left: 0
         position: absolute
         transform: scale3d(0, 1, 1)
@@ -51,6 +51,7 @@ nav
     .nuxt-link-active
       .menu-link
         color: $color-white
+        font-weight: bold
 
         &:hover,
         &:focus
@@ -69,8 +70,6 @@ nav
     margin-left: 10px
 
     li
-      margin-right: 30px
-
       a
         display: block
         height: 24px
@@ -87,8 +86,5 @@ nav
             circle
               fill: $bc-instagram-8
 
-
-  @include mq($until: tablet)
-    .menu
-      .menu-link
-        font-size: $font-size-nm + .2
+      &:first-of-type
+        margin-right: 30px

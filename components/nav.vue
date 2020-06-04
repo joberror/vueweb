@@ -7,7 +7,7 @@
             li(v-for='(link, i) in extLink')
               a(:href='link.href', :title='link.title')
                 component(:is='link.svg', :class='link.class')
-              
+
 </template>
 
 <script>

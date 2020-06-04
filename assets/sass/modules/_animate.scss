@@ -1,8 +1,29 @@
 // All animations
 
-@mixin keyframes($animation) {
+@mixin keyframes($animation, $values...) {
   @if($animation == 'fade') {
-    @keyframes fade {
+    @keyframes #{$animation} {
+      to {
+        opacity: 1;
+      }
+    }
+  }
+  @if($animation == 'width') {
+    @keyframes #{$animation} {
+      to {
+        width: $values;
+      }
+    }
+  }
+  @if($animation == 'show') {
+    @keyframes #{$animation} {
+      to {
+        visibility: visible;
+      }
+    }
+  }
+  @if($animation == 'blink') {
+    @keyframes #{$animation} {
       0% {
         opacity: 0;
       }
