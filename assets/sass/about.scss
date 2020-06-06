@@ -1,0 +1,97 @@
+//sass-lint:disable selector-depth, nesting-depth
+@import 'modules/plugins';
+
+section {
+  margin: 8vh 3vh 0;
+
+  div {
+    p {
+      color: $color-white;
+      font-size: $font-size-md;
+      margin-bottom: 4vh;
+
+      a {
+        color: gray(70);
+        font-weight: bold;
+
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+
+    ul {
+      > li {
+        margin-bottom: 4vh;
+
+        ul {
+          li {
+            &:first-of-type {
+              color: gray(50);
+              display: flex;
+              font-size: $font-size-md - .3;
+              font-weight: 600;
+              margin-bottom: 10px;
+
+              span {
+                display: inline-block;
+                height: 21px;
+                margin-right: 14px;
+                width: 21px;
+
+                svg {
+                  height: 100%;
+
+                  path,
+                  circle,
+                  polygon {
+                    fill: $color-white;
+                  }
+                }
+              }
+            }
+
+            &:last-of-type {
+              color: gray(90);
+              font-size: $font-size-md;
+
+              a {
+                opacity: 1;
+
+                &:hover {
+                  opacity: .5;
+                }
+              }
+
+              b {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include mq($until: tablet) {
+    div {
+      p {
+        font-size: $font-size-nm;
+      }
+
+      ul {
+        > li {
+          ul {
+            li {
+              &:first-of-type,
+              &:last-of-type {
+                font-size: $font-size-nm;
+              }
+          }
+          }
+        }
+      }
+    }
+  }
+
+}

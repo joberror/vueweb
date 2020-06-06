@@ -17,4 +17,12 @@ body {
   height: auto;
   line-height: $line-height;
   text-rendering: optimizelegibility;
+
+  a {
+    transition: 1s;
+
+    &:hover {
+      transition: 1s;
+    }
+  }
 }
