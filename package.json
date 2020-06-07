@@ -4,7 +4,8 @@
     "dev": "nuxt"
   },
   "dependencies": {
-    "nuxt": "^2.12.2"
+    "nuxt": "^2.12.2",
+    "nuxt-compress": "^2.0.0"
   },
   "devDependencies": {
     "@nuxtjs/svg": "^0.1.11",

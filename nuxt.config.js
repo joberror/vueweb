@@ -2,7 +2,8 @@ export default {
     build: {
         //TODO: change on Production
         analyze: true,
-        extractCSS: true
+        extractCSS: true,
+        devtools: true
     },
     buildModules: [
         'nuxt-purgecss'
@@ -11,7 +12,18 @@ export default {
         src: '~plugins/main'
     }],
     modules: [
-        '@nuxtjs/svg'
+        '@nuxtjs/svg',
+        [
+            "nuxt-compress",
+            {
+                gzip: {
+                    cache: true
+                },
+                brotli: {
+                    threshold: 10240
+                }
+            }
+        ]
     ],
     css: [
         '~assets/sass/main.sass'
