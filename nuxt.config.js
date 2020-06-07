@@ -4,6 +4,9 @@ export default {
         analyze: true,
         extractCSS: true
     },
+    buildModules: [
+        'nuxt-purgecss'
+    ],
     plugins: [{
         src: '~plugins/main'
     }],

@@ -2,13 +2,25 @@
 @import 'modules/plugins';
 
 section {
-  margin: 8vh 3vh 0;
+  background-image: url('~assets/img/selfie-web.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  justify-content: space-between;
+  margin: 8vh 10vw 0;
+  padding-bottom: 8vh;
 
   div {
+    display: flex;
+    justify-content: space-between;
+
     p {
       color: $color-white;
       font-size: $font-size-md;
-      margin-bottom: 4vh;
+      // margin-bottom: 4vh;
 
       a {
         color: gray(70);
@@ -22,7 +34,7 @@ section {
 
     ul {
       > li {
-        margin-bottom: 4vh;
+        //margin-bottom: 4vh;
 
         ul {
           li {
@@ -31,7 +43,7 @@ section {
               display: flex;
               font-size: $font-size-md - .3;
               font-weight: 600;
-              margin-bottom: 10px;
+              margin-bottom: 14px;
 
               span {
                 display: inline-block;
@@ -74,13 +86,24 @@ section {
   }
 
   @include mq($until: tablet) {
+    background-image: none;
+    justify-content: start;
+    margin: 8vh 3vh 0;
+    padding-bottom: 0;
+
     div {
+      flex-direction: column;
+      justify-content: start;
+
       p {
         font-size: $font-size-nm;
+        margin-bottom: 4vh;
       }
 
       ul {
         > li {
+          margin-bottom: 4vh;
+
           ul {
             li {
               &:first-of-type,
