@@ -28,11 +28,11 @@ import profileSVG from "~/assets/svg/profile.svg?inline";
 import toolsSVG from "~/assets/svg/tools.svg?inline";
 
 export default {
-  name: 'about',
+  name: "about",
   head() {
     return {
-      title: '= About Me'
-    }
+      title: "= About Me"
+    };
   },
   components: {
     codeSVG,
@@ -40,9 +40,9 @@ export default {
     toolsSVG
   },
   mounted() {}
-}
+};
 </script>
 
 <style lang='scss' scoped>
-@import '~assets/sass/about.scss';
+@import "~assets/sass/about";
 </style>

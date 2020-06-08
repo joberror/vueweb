@@ -22,5 +22,5 @@ export default {
 };
 </script>
 <style lang='scss' scoped>
-@import '~assets/sass/home.scss'
+@import '~assets/sass/home'
 </style>
