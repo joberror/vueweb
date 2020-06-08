@@ -1,5 +1,5 @@
 <template lang="pug">
-  h1 welcome to Work page
+  section I am here
 </template>
 
 <script>
