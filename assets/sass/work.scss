@@ -1,0 +1,110 @@
+//sass-lint:disable selector-depth, nesting-depth, no-color-literals
+@import 'modules/plugins';
+
+section {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  margin: 0 8vw;
+
+  div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    a {
+      flex-grow: 3;
+
+      ul {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        li {
+          margin-bottom: 14px;
+          transition: 1s linear;
+
+          &:first-of-type {
+            height: 16.1875vw;
+            width: 21.0625vw;
+
+            svg {
+              height: 100%;
+              width: 100%;
+
+              group,
+              path {
+                fill: gray(3);
+              }
+            }
+
+            &.text-limiter {
+              background-color: #f7931e;
+            }
+
+            &.visual-icons {
+              background-color: #009649;
+            }
+
+            &.bootstrap {
+              background-color: #8ea3ae;
+            }
+          }
+
+          @include even {
+            color: $color-white;
+            font-size: $font-size-lg;
+            font-weight: bold;
+          }
+
+          &:last-of-type {
+            color: gray(25);
+            font-size: $font-size-nm + .2;
+          }
+        }
+      }
+
+      &:hover {
+        ul {
+          li {
+            &:first-of-type {
+              background-color: $color-white;
+              box-shadow: 0 0 2px #4195fc;
+
+              svg {
+                group,
+                path {
+                  fill: gray(6);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include mq($until: tablet)  {
+    height: auto;
+    margin: 10vh 0 0;
+
+    div {
+      flex-direction: column;
+
+      a {
+        margin-bottom: 6vh;
+
+        ul {
+          li {
+            &:first-of-type {
+              height: 150px;
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
