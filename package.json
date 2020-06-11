@@ -1,5 +1,9 @@
 {
   "name": "my-vue-web",
+  "version": "0.1.1",
+  "private": "true",
+  "homepage": "/vueweb/",
+  "description": "My website built with Vue and Nuxtjs",
   "scripts": {
     "dev": "nuxt"
   },
