@@ -13,20 +13,20 @@
   },
   "devDependencies": {
     "@nuxtjs/svg": "^0.1.11",
-    "brand-colors": "latest",
-    "family.scss": "latest",
+    "brand-colors": "^2.1.1",
+    "family.scss": "^1.0.8",
     "kf-sass": "^1.0.1",
     "node-sass": "^4.14.1",
     "nuxt-purgecss": "^1.0.0",
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.0.0",
-    "rfs": "latest",
+    "rfs": "^9.0.3",
     "sass-loader": "^8.0.2",
-    "sass-mq": "latest",
+    "sass-mq": "^5.0.1",
     "vue-svg-loader": "^0.16.0",
     "vue-template-compiler": "^2.6.11"
   },
   "optionalDependencies": {
-    "fsevents": "latest"
+    "fsevents": "^2.1.3"
   }
 }
