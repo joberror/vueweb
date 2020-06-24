@@ -90,7 +90,7 @@ export default {
                 href: '/favicon-195.png'
             },
             {
-                rel: 'rel',
+                rel: 'icon',
                 href: '/favicon-32.png',
                 sizes: '32x32'
             },
