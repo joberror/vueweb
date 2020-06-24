@@ -1,7 +1,7 @@
 export default {
     build: {
         //TODO: change on Production
-        analyze: true,
+        analyze: false,
         extractCSS: true,
         devtools: true
     },
