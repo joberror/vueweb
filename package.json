@@ -5,7 +5,12 @@
   "homepage": "/vueweb/",
   "description": "My website built with Vue and Nuxtjs",
   "scripts": {
-    "dev": "nuxt"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt build",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
   "dependencies": {
     "nuxt": "^2.13.0",
