@@ -1,4 +1,5 @@
 export default {
+    target: 'static',
     build: {
         //TODO: change on Production
         analyze: false,
@@ -6,7 +7,7 @@ export default {
         devtools: true
     },
     buildModules: [
-        'nuxt-purgecss'
+        //'nuxt-purgecss'
     ],
     plugins: [{
         src: '~plugins/main'
