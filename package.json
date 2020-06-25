@@ -14,7 +14,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^2.13.0",
+    "nuxt": "^2.13.1",
     "nuxt-compress": "^2.0.0"
   },
   "devDependencies": {
