@@ -1,31 +1,28 @@
 export default {
     target: 'static',
+
     build: {
         //TODO: change on Production
         analyze: false,
         extractCSS: true,
-        devtools: true
+        devtools: true,
+
+        extend: (config) => {
+            const svgRule = config.module.rules.find(rule => rule.test.test('.svg'));
+
+            svgRule.test = /\.(png|jpe?g|gif|webp)$/;
+
+            config.module.rules.push({
+                test: /\.svg$/,
+                use: ['babel-loader', 'vue-svg-loader'],
+            });
+        },
     },
-    buildModules: [
-        //'nuxt-purgecss'
-    ],
+
     plugins: [{
-        src: '~plugins/main'
+        src: '~plugins/helper'
     }],
-    modules: [
-        '@nuxtjs/svg',
-        [
-            "nuxt-compress",
-            {
-                gzip: {
-                    cache: true
-                },
-                brotli: {
-                    threshold: 10240
-                }
-            }
-        ]
-    ],
+
     css: [
         '~assets/sass/main.sass'
     ],

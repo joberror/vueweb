@@ -25,7 +25,7 @@
 <script>
 import codeSVG from "~/assets/svg/code.svg?inline";
 import profileSVG from "~/assets/svg/profile.svg?inline";
-import toolsSVG from "~/assets/svg/tools.svg?inline";
+import toolsSVG from "~/assets/svg/round.svg?inline";
 
 export default {
   name: "about",

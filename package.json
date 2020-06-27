@@ -18,7 +18,6 @@
     "nuxt-compress": "^2.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/svg": "^0.1.11",
     "brand-colors": "^2.1.1",
     "family.scss": "^1.0.8",
     "kf-sass": "^1.0.1",
