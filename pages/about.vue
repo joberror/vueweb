@@ -1,7 +1,7 @@
 <template lang='pug'>
   section
     div
-      p I am #[span.cl-color-name Olakunle Bolarinwa] [ #[i.cl-fs-italic nick]: Joberror ], #[br]I am from Nigeria and resides in Lagos. #[br]A graduate of #[a(href='https://www.lasu.edu.ng', title='Lagos State University') LASU] with BSc. Mathematics. #[br] I am into #[span.cl-color-code Coding] and #[span.cl-color-design Visual Design], PC #[br]Logistics and Management.
+      p I am #[span.cl-color-name Olakunle Bolarinwa] [ #[i.cl-fs-italic nick]: Joberror ], #[br]I am from Nigeria and resides in Lagos. #[br]A graduate of #[a(href='https://www.lasu.edu.ng', title='Lagos State University') LASU] with BSc. Math#[em ematics]. #[br] I am into #[span.cl-color-code Coding] and #[span.cl-color-design Visual Design], PC #[br]Logistics and Management.
 
       ul
         li
