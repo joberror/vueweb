@@ -1,3 +1,6 @@
+import shrinkRay from 'shrink-ray-current';
+
+
 export default {
     target: 'static',
 
@@ -19,6 +22,43 @@ export default {
         },
     },
 
+    pwa: {
+        meta: {
+            title: 'My PWA',
+            author: 'Bolarinwa olakunle (Joberror)',
+        },
+        manifest: {
+            name: 'iamJoberror website',
+            short_name: 'Joberror',
+            lang: 'en',
+            theme_color: '#141414'
+        },
+    },
+
+    render: {
+        compressor: shrinkRay(),
+        bundleRenderer: {
+            shouldPreload: (file, type) => {
+                return ['script', 'style', 'font'].includes(type);
+            }
+        }
+    },
+
+    modules: [
+        [
+            "nuxt-compress",
+            {
+                gzip: {
+                    cache: true
+                },
+                brotli: {
+                    threshold: 10240
+                }
+            }
+        ],
+        '@nuxtjs/pwa',
+    ],
+
     plugins: [{
         src: '~plugins/helper'
     }],
@@ -28,6 +68,9 @@ export default {
     ],
 
     head: {
+        htmlAttrs: {
+            lang: 'en'
+        },
         meta: [{
                 charset: 'UTF'
             },
