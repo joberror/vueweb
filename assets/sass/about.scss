@@ -108,7 +108,7 @@ section {
             li {
               &:first-of-type,
               &:last-of-type {
-                font-size: $font-size-nm;
+                font-size: $font-size-nm + .2;
               }
           }
           }
