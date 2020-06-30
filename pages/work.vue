@@ -1,7 +1,7 @@
 <template lang="pug">
   section
     div
-      a(v-for='(project, i) in projects', :key='i', :href='"https://"+project.href+".iamjoberror.com"', :title='project.desc')
+      a(v-for='(project, i) in projects', :key='i', :href='project.href', :title='project.desc')
         ul
           li()
             span
@@ -32,21 +32,21 @@ export default {
     return {
       projects: [
         {
-          href: "t-area",
+          href: "https://ta-limit.iamjoberror.com",
           title: "Textarea <i>L</i>imiter",
           svg: "textSVG",
           class: "text-area",
           desc: "Limit and filter HTML Textarea input."
         },
         {
-          href: "t-boot",
+          href: "https://github.com/joberror/twig-bootstrap",
           title: "Twig <i>B</i>ootstrap",
           svg: "bootSVG",
           class: "twig-bootstrap",
           desc: "PHP Twig bootstrap with Gulp."
         },
         {
-          href: "v-icons",
+          href: "https://vis-icons.iamjoberror.com",
           title: "Visual <i>I</i>cons",
           svg: "viconSVG",
           class: "visual-icons",
