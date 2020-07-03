@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "nuxt": "^2.13.2",
+    "nuxt": "^2.13.3",
     "nuxt-compress": "^2.0.0",
     "shrink-ray-current": "^4.1.2"
   },
