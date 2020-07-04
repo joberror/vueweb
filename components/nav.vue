@@ -1,12 +1,12 @@
 <template lang="pug">
-    nav
-        ul.menu
-            nuxt-link(v-for='(menu, i) in menus', tag='li' :to='menu.href', :key='menu.content' exact)
-              a.menu-link(:title='menu.title', :data-content='menu.content') {{menu.content}}
-        ul.social
-            li(v-for='(link, i) in extLink')
-              a(:href='link.href', :title='link.title')
-                component(:is='link.svg', :class='link.class')
+  nav
+    ul.menu
+      nuxt-link(v-for='(menu, i) in menus', tag='li' :to='menu.href', :key='menu.content' exact)
+        a.menu-link(:title='menu.title', :data-content='menu.content') {{menu.content}}
+    ul.social
+      li(v-for='(link, i) in extLink')
+        a(:href='link.href', :title='link.title')
+          component(:is='link.svg', :class='link.class')
 </template>
 
 <script>
@@ -18,9 +18,7 @@ export default {
     TwitterSVG,
     InstagramSVG
   },
-  mounted () {
-    this.$hello('Simi')
-  },
+
   data() {
     return {
       extLink: [

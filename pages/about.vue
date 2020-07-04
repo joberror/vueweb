@@ -1,4 +1,6 @@
 <template lang='pug'>
+main
+  Navigation
   section
     div
       p I am #[span.cl-color-name Olakunle Bolarinwa] [ #[i.cl-fs-italic nick]: Joberror ], #[br]I am from Nigeria and resides in Lagos. #[br]A graduate of #[a(href='https://www.lasu.edu.ng', title='Lagos State University') LASU] with BSc. Math#[em ematics]. #[br] I am into #[span.cl-color-code Coding] and #[span.cl-color-design Visual Design], PC #[br]Logistics and Management.
@@ -23,6 +25,7 @@
 </template>
 
 <script>
+import Navigation from '@/components/nav.vue';
 import codeSVG from "~/assets/svg/code.svg?inline";
 import profileSVG from "~/assets/svg/profile.svg?inline";
 import toolsSVG from "~/assets/svg/tools.svg?inline";
@@ -37,9 +40,9 @@ export default {
   components: {
     codeSVG,
     profileSVG,
-    toolsSVG
-  },
-  mounted() {}
+    toolsSVG,
+    Navigation
+  }
 };
 </script>
 

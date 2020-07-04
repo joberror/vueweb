@@ -57,11 +57,24 @@ export default {
             }
         ],
         '@nuxtjs/pwa',
+        'nuxt-webfontloader'
     ],
 
-    plugins: [{
-        src: '~plugins/helper'
-    }],
+    webfontloader: {
+        // add Google Fonts as "custom" | workaround required
+        custom: {
+            families: [
+                'Jost:n3,n4, n5, n6, i3, i4, i5, i6',
+                'chewy:n4'
+            ],
+            urls: [
+                // for each Google Fonts add url + options you want
+                // here add font-display option
+                'https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap',
+                'https://fonts.googleapis.com/css2?family=Chewy&display=swap'
+            ]
+        }
+    },
 
     css: [
         '~assets/sass/main.sass'
@@ -133,10 +146,6 @@ export default {
                 rel: 'icon',
                 href: '/favicon-32.png',
                 sizes: '32x32'
-            },
-            {
-                rel: 'stylesheet',
-                href: 'https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap'
             }
         ]
     }
