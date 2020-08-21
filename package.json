@@ -14,7 +14,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "@nuxtjs/pwa": "^3.0.1",
     "node-zopfli-es": "^1.0.6",
     "nuxt": "^2.14.3",
     "nuxt-compress": "^2.0.0",
