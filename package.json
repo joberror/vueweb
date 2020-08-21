@@ -33,7 +33,7 @@
     "sass-loader": "^9.0.3",
     "sass-mq": "^5.0.1",
     "vue-svg-loader": "^0.16.0",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.11"
   },
   "optionalDependencies": {
     "fsevents": "^2.1.3"
