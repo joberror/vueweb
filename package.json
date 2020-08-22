@@ -14,7 +14,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "vue": "^2.6.11",
+    "vue": "^2.6.12",
     "@nuxtjs/pwa": "^3.0.1",
     "node-zopfli-es": "^1.0.6",
     "nuxt": "^2.14.3",
@@ -34,7 +34,7 @@
     "sass-loader": "^9.0.3",
     "sass-mq": "^5.0.1",
     "vue-svg-loader": "^0.16.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.12"
   },
   "optionalDependencies": {
     "fsevents": "^2.1.3"
