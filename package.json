@@ -17,7 +17,7 @@
     "vue": "^2.6.12",
     "@nuxtjs/pwa": "^3.3.2",
     "node-zopfli-es": "^1.0.7",
-    "nuxt": "^2.14.11",
+    "nuxt": "^2.14.12",
     "nuxt-compress": "^4.1.0",
     "nuxt-webfontloader": "^1.1.0",
     "pug": "^3.0.0",
