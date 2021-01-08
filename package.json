@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "vue": "^2.6.12",
-    "@nuxtjs/pwa": "^3.3.3",
+    "@nuxtjs/pwa": "^3.3.4",
     "node-zopfli-es": "^1.0.7",
     "nuxt": "^2.14.12",
     "nuxt-compress": "^4.1.0",
