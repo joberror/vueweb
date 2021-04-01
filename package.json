@@ -18,7 +18,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "node-zopfli-es": "^1.0.7",
     "nuxt": "^2.15.3",
-    "nuxt-compress": "^4.1.1",
+    "nuxt-compress": "^5.0.0",
     "nuxt-webfontloader": "^1.1.0",
     "pug": "^3.0.2",
     "shrink-ray-current": "^4.1.2"
