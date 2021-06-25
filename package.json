@@ -28,7 +28,7 @@
     "brand-colors": "^2.1.1",
     "family.scss": "^1.0.8",
     "kf-sass": "^1.0.1",
-    "node-sass": "^6.0.0",
+    "node-sass": "^6.0.1",
     "nuxt-purgecss": "^1.0.0",
     "pug-plain-loader": "^1.1.0",
     "rfs": "^9.0.3",
