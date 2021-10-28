@@ -22,7 +22,7 @@
     "nuxt-webfontloader": "^1.1.0",
     "pug": "^3.0.2",
     "shrink-ray-current": "^4.1.3",
-    "ua-parser-js": ">=0.7.28"
+    "ua-parser-js": ">=1.0.2"
   },
   "devDependencies": {
     "brand-colors": "^2.1.1",
