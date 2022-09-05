@@ -34,13 +34,13 @@ export default {
   data() {
     return {
       projects: [
-        {
-          href: "https://ta-limit.iamjoberror.com",
-          title: "Textarea <i>L</i>imiter",
-          svg: "textSVG",
-          class: "text-area",
-          desc: "Limit and filter HTML Textarea input."
-        },
+      //  {
+      //    href: "https://ta-limit.iamjoberror.com",
+      //    title: "Textarea <i>L</i>imiter",
+      //    svg: "textSVG",
+      //    class: "text-area",
+      //    desc: "Limit and filter HTML Textarea input."
+      //  },
         {
           href: "https://github.com/joberror/twig-bootstrap",
           title: "Twig <i>B</i>ootstrap",
@@ -49,7 +49,7 @@ export default {
           desc: "PHP Twig bootstrap with Gulp."
         },
         {
-          href: "https://vis-icons.iamjoberror.com",
+          href: "https://vsicons.iamjoberror.com",
           title: "Visual <i>I</i>cons",
           svg: "viconSVG",
           class: "visual-icons",

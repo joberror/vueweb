@@ -8,7 +8,7 @@ main
         li #[hr.cl-hr-vertical]
         li.cl-color-project Current project:
         li
-          a.cl-trans-hov-color(title='Visual Icons just got released', href='https://vis-icons.iamjoberror.com/').cl-link-out Visual Icons v1.1.
+          a.cl-trans-hov-color(title='Visual Icons just got released', href='https://vsicons.iamjoberror.com/').cl-link-out Visual Icons v1.1.
 </template>
 
 <script>
