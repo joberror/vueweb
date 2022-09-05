@@ -1,43 +1,46 @@
 {
-  "name": "my-vue-web",
-  "version": "0.1.1",
-  "private": "true",
-  "homepage": "/vueweb/",
-  "description": "My website built with Vue and Nuxtjs",
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "serve": "nuxt serve",
-    "generate": "nuxt build && nuxt export",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
-  },
-  "dependencies": {
-    "vue": "^3.2.38",
-    "@nuxtjs/pwa": "^3.3.5",
-    "node-zopfli-es": "^1.0.7",
-    "nuxt": "^2.15.8",
-    "nuxt-compress": "^5.0.0",
-    "nuxt-webfontloader": "^1.1.0",
-    "pug": "^3.0.2",
-    "shrink-ray-current": "^4.1.3",
-    "ua-parser-js": ">=1.0.2"
-  },
-  "devDependencies": {
-    "brand-colors": "^2.1.1",
-    "family.scss": "^1.0.8",
-    "kf-sass": "^1.0.1",
-    "node-sass": "^7.0.1",
-    "nuxt-purgecss": "^1.0.0",
-    "pug-plain-loader": "^1.1.0",
-    "rfs": "^9.0.6",
-    "sass-loader": "^10.1.1",
-    "sass-mq": "^6.0.0",
-    "vue-svg-loader": "^0.16.0",
-    "vue-template-compiler": "^2.6.14"
-  },
-  "optionalDependencies": {
-    "fsevents": "^2.3.2"
-  }
+	"name": "my-vue-web",
+	"version": "0.1.1",
+	"private": "true",
+	"homepage": "/vueweb/",
+	"description": "My website built with Vue and Nuxtjs",
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"serve": "nuxt serve",
+		"generate": "nuxt build && nuxt export",
+		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+		"precommit": "npm run lint"
+	},
+	"dependencies": {
+		"vue": "^2.6.14",
+		"@nuxtjs/pwa": "^3.3.5",
+		"core-js": "^3.19.3",
+		"node-zopfli-es": "^1.0.7",
+		"nuxt": "^2.15.8",
+		"nuxt-compress": "^5.0.0",
+		"nuxt-webfontloader": "^1.1.0",
+		"shrink-ray-current": "^4.1.3",
+		"ua-parser-js": ">=1.0.2",
+		"vue-server-renderer": "^2.6.14",
+		"vue-template-compiler": "^2.6.14",
+		"webpack": "^4.46.0"
+	},
+	"devDependencies": {
+		"brand-colors": "^2.1.1",
+		"family.scss": "^1.0.8",
+		"kf-sass": "^1.0.1",
+		"nuxt-purgecss": "^1.0.0",
+		"pug": "^3.0.2",
+		"pug-plain-loader": "^1.1.0",
+		"rfs": "^9.0.6",
+		"sass": "^1.54.8",
+		"sass-loader": "^10.1.1",
+		"sass-mq": "^6.0.0",
+		"vue-svg-loader": "^0.16.0"
+	},
+	"optionalDependencies": {
+		"fsevents": "^2.3.2"
+	}
 }
